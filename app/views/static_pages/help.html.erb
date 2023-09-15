@@ -1,2 +1,9 @@
-<h1>StaticPages#help</h1>
-<p>Find me in app/views/static_pages/help.html.erb</p>
+<% provide(:title, "Help") %>
+    
+   <h1>Help is Here</h1>
+
+<%= link_to 'Back Home', root_path, class:"btn btn-lg btn-primary" %>
+<%= link_to 'About Us', help_path, class:"btn btn-lg btn-warning" %>
+<%= link_to 'Privacy Policy', privacy_policy_path, class:"btn btn-lg btn-danger" %> 
+
+
